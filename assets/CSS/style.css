@@ -55,6 +55,7 @@ body {
     transition: .5s;
     background-color: var(--second-color);
     transition: all ease-in-out 1s;
+    overflow-x: hidden;
 }
 
 body.dark-theme{
@@ -798,7 +799,7 @@ body.dark-theme .greetings .btn::before{
     font-family: 'Roboto Mono', monospace;
     font-size: 5rem;
     font-weight: bold;
-    margin-top: 10rem;
+    margin-top: 19rem;
     color: var(--red-color);
     text-align: justify;
 }
@@ -872,6 +873,10 @@ body.dark-theme .greetings .btn::before{
 .alpha.c.animated{
     animation: rubberBand 1 ease-in-out 0.9s;
 }
+
+.animate-wave{
+    animation: wave 2.5s infinite;
+}
   
   @keyframes ani {
     0%{
@@ -908,6 +913,33 @@ body.dark-theme .greetings .btn::before{
     100%{
       transform: scale(1,1);
     }
+  }
+
+  @keyframes wave{
+      0%{
+          transform: rotate(0deg);
+      }
+      10%{
+          transform: rotate(15deg);
+      }
+      20%{
+          transform: rotate(-15deg);
+      }
+      30%{
+          transform: rotate(14deg);
+      }
+      40%{
+          transform: rotate(-5deg);
+      }
+      50%{
+          transform: rotate(16deg);
+      }
+      60%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(0deg);
+      }
   }
 
   @keyframes rubberBand{
@@ -995,6 +1027,31 @@ body.dark-theme .greetings .btn::before{
     font-size: 1.5rem;
 }
 
+.footer .icon i:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.footer .icon .fa-github:hover{
+    color: black;
+}
+
+.footer .icon .fa-instagram:hover{
+    color: rgb(241, 75, 103);
+}
+
+.footer .icon .fa-facebook:hover{
+    color: #4267B2
+}
+
+.footer .icon .fa-linkedin:hover{
+    color: #2867B2;
+    
+}
+
+.footer .icon .fa-behance:hover{
+    color:#053EFF;
+}
 
 .timeline {
     border-left: 3px solid #727cf5;
@@ -1301,6 +1358,7 @@ body.dark-theme .greetings .btn::before{
 .details i{
     color: var(--first-color);
 }
+
 
 .success{
     background-color: green;

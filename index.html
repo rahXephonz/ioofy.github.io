@@ -8,6 +8,7 @@
     integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="shortcut icon" href="assets/ICON/icons.ico">
@@ -76,14 +77,14 @@
         </navbar>
     </nav>
     
-    <section class="greetings" id="main">
+    <section class="greetings" id="main" data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out">
         <div class="typed">
             <h1>
                 <img src="assets/IMG/ball.png" class="dots animate" alt="ball1">
                 <div id="box" class="first">
                     <div class="alpha a">H</div>
                     <div class="alpha a">i</div>
-                    <span>👋</span>
+                    <span class="animate-wave">👋</span>
                 </div>
 
                 <div id="box" class="second">
@@ -148,7 +149,7 @@
             </div>
         </h1>
             <p>
-                <strong>- Hello everyone 👋, I’m Rizukyy. </strong>I’m a self-taught web developer <br> 
+                <strong>- Hello everyone 🖐, I’m Rizukyy. </strong>I’m a self-taught web developer <br> 
                 based in Bogor Indonesia. I’m also an engineer in the field <br> of automation engineering. I’m very interested in the world of the <br>
                 internet. and I’m also interested in art and design. I am so excited <br>
                 about new things both learning and experience, In the future <br> maybe I will collaborate between automation and design.
@@ -246,7 +247,7 @@
             - This is my portfolio, but not all listed in here 😔
         </p>
         <div class="cards">
-            <div class="card card1">
+            <div class="card card1" data-aos="flip-left" data-aos-delay="200" data-aos-easing="ease-in-out">
                 <div class="fit">
                     <img src="assets/IMG/adm_panel.png" alt="admin_panel">
                 </div>
@@ -258,7 +259,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card card1">
+            <div class="card card1" data-aos="flip-right" data-aos-delay="400" data-aos-easing="ease-in-out">
                 <div class="fit">
                     <img src="assets/IMG/yb.png" alt="yourbarang">
                 </div>
@@ -271,7 +272,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card card2">
+            <div class="card card2" data-aos="flip-up" data-aos-delay="800" data-aos-easing="ease-in-out">
                 <div class="fit">
                     <img src="assets/IMG/webiot.jpg" alt="webiot">
                 </div>
@@ -286,7 +287,7 @@
                 </div>
             </div>
 
-            <div class="card card3">
+            <div class="card card3" data-aos="flip-down" data-aos-delay="1200" data-aos-easing="ease-in-out">
                 <div class="fit">
                     <img src="assets/IMG/proshop.png" alt="proshopp">
                 </div>
@@ -296,7 +297,7 @@
                 </div>
             </div>
 
-            <div class="card card4">
+            <div class="card card4" data-aos="zoom-in" data-aos-delay="1600" data-aos-easing="ease-in-out" >
                 <div class="fit">
                     <img src="assets/IMG/travelgo.png" alt="yourbarang">
                 </div>
@@ -335,7 +336,7 @@
             <blockquote style="margin-left: 19px; margin-top: -20px;"><i>Note : if you have any suggest and criticism please contact me!</i></blockquote>
         </p>
         <div class="container">
-            <div class="formBx">
+            <div class="formBx" data-aos="fade-right" data-aos-delay="200" data-aos-easing="ease-in-out">
                 <form id="contact-form">
                     <div class="inputBox">
                         <input type="text" required="required" id="name" name="name">
@@ -355,7 +356,7 @@
                     </div>
                 </form>
             </div>
-            <div class="imgBx">
+            <div class="imgBx" >
                 <img src="assets/IMG/email.png">
             </div>
         </div>
@@ -368,7 +369,7 @@
                 <a href="https://www.github.com/ioofy/" target="_blank"><i class="fab fa-github" data-toggle="tooltip" title="Github"></i></a>
                 <a href="https://www.instagram.com/rizukyy27/" target="_blank"><i class="fab fa-instagram" data-toggle="tooltip" title="Instagram"></i></a>
                 <a href="https://www.facebook.com/rizukyy27" target="_blank"><i class="fab fa-facebook" data-toggle="tooltip" title="Facebook"></i></a>
-                <a href="https://www.linkedin.com/in/muhamad-rizky-890854207" target="_blank"><i class="fab fa-linkedin-in"data-toggle="tooltip" title="Linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/muhamad-rizky-890854207" target="_blank"><i class="fab fa-linkedin"data-toggle="tooltip" title="Linkedin"></i></a>
                 <a href="https://www.behance.net/rizukyy27" target="_blank"><i class="fab fa-behance"data-toggle="tooltip" title="Behance"></i></a>
             </div>
             <p class="text-foot-1">
@@ -389,6 +390,11 @@
     crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/JS/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
 
 </body>
 </html>

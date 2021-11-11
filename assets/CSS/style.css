@@ -751,7 +751,7 @@ a {
 
 .about .btn{
     width: 11rem;
-    height: 2.5rem;
+    height: 2.8rem;
     text-align: center;
     margin-top: -5px;
     text-decoration: none;
@@ -1041,7 +1041,7 @@ body.dark-theme .greetings .btn::before{
 }
 
 .footer .icon .fa-facebook:hover{
-    color: #0F52BA;
+    color: #1674EA;
 }
 
 .footer .icon .fa-linkedin:hover{

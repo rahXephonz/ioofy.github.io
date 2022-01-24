@@ -68,7 +68,7 @@ button.addEventListener('click', (evt) => {
     else{
         Email.send({
             SecureToken: "4fdf9f77-b58d-47cc-826f-48dd312499f1",
-            To: "mynev.id@gmail.com",
+            To: "yourmail@mail.com",
             From: `${email}`,
             Subject: `📧 An email from ${name}`,
             Body: `Hello Rizukyy👋, there a message from your viewers. <br> <br> 🧑🏻 A Name : ${name} <br> ✉️ A Message : <br><br> 
